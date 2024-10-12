@@ -23,14 +23,7 @@ nav{
     display: inline-flex;
     padding: 5px;
     gap: 20px;
-}
-input{
-border-radius: 5px;
-color: gold;
-text-align: center;
-margin-bottom: 5px;
-padding: 2px;
-border-color: darkgoldenrod;
+    text-transform: uppercase;
 }
 fieldset{
     color: darkgoldenrod;
