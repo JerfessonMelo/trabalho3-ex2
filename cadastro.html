@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A ABC Health é uma clínica de saúde completa, oferecendo
+     atendimento especializado e personalizado em diversas áreas médicas. Nossa equipe altamente
+      qualificada e nossas instalações modernas garantem o cuidado que você merece.
+       Agende sua consulta na ABC Health hoje mesmo!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <header>
+        <h1>Clinica ABC Health</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Formulário De Cadastro</h2>
+        <form action="cadastraCliente.php" method="post">
+            <fieldset>
+                <legend>Dados Pessoais</legend> 
+
+                <input type="hidden" name="original" value="web"><br>
+
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" minlength="2" maxlength="50" required autofocus><br>
+
+                <label for="e-mail">E-mail:</label>
+                <input type="email" id="e-mail" name="e-mail" placeholder="seuemail@gmail.com" required><br>
+
+                <label for="cpf">CPF:</label>
+                <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required ><br>
+
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" name="idade" required><br>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required><br>
+
+                <label for="dataNascimento">Data Nascimento:</label>
+                <input type="date" id="dataNascimento" name="dataNascimento"><br>
+
+                <label for="registro">Seu Número de Registro</label>
+                <input type="number" id="registro" name="registro" value="965522" readonly><br>
+
+                <input type="radio" id="sexoM" name="sexo">
+                <label for="sexoM">Masculino</label>
+                <input type="radio" id="sexoF" name="sexo">
+                <label for="sexoF">Ferminino</label><br>
+
+                <label for="estadoCivil">Estado Civil</label>
+                <select id="estadoCivil" name="estadoCivil">
+                <option value="solteiro">Solteiro</option>
+                <option value="casado">Casado</option>
+                <option value="divorciado">Divorciado</option>
+                <option value="viuvo">Viuvo</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Endereço</legend>
+
+                <label for="cep">CEP:</label>
+                <input type="text" id="cep" name="cep" placeholder="00000-000" required><br>
+
+                <label for="tipoLogradouro">Tipo de logradouro:</label>
+                <select id="tipoLogradouro" name="tipoLogradouro">
+                <option value="rua">Rua</option>
+                <option value="avenida">Avenida</option>
+                <option value="praca">Praça</option>
+                <option value="viela">Viela</option>
+                <option value="alameda">Alameda</option>
+                </select><br>
+
+                <label for="logradouro">Logradouro:</label>
+                <input type="text" id="logradouro" name="logradouro" required><br>
+
+                <label for="bairro">Bairro:</label>
+                <input type="text" id="bairro" name="bairro" required><br>
+
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" name="cidade" required><br>
+
+                <label for="estado">Estado:</label>
+                <input type="text" id="estado" name="estado" required><br><br>
+            </fieldset>
+            <fieldset>
+                <legend>Informações Adicionais</legend>
+
+                <input type="checkbox" id="filmes" name="filmes" value="filmes">
+                <label for="filmes">Filme</label><br>
+
+                <input type="checkbox" id="informatica" name="informatica" value="informatica">
+                <label for="informatica">Informatica</label><br>
+
+                <input type="checkbox" id="games" name="games" value="games">
+                <label for="games">Games</label><br>
+
+                <input type="checkbox" id="livros" name="livros" value="livros">
+                <label for="livros">Livros</label><br>
+
+                <input type="checkbox" id="roupas" name="roupas" value="roupas">
+                <label for="roupas">Roupas</label><br>
+
+                <input type="checkbox" id="esportes" name="esportes" value="esportes">
+                <label for="esportes">Esportes</label><br><br>
+          
+                <textarea placeholder="Conte Sua História" >Conte Sua História</textarea><br>
+
+                <input type="file" multiple accept="image/*"> 
+            </fieldset><br>
+            <button>Finalizar Cadastro</button>
+        </form>   
+    </main>
+    <footer>Av. João Naves de Ásilas, Santa Mônica, Uberlândia</footer>
+</body>
+</html>
