@@ -22,12 +22,13 @@ section{
 }
 nav{
     background-color: gold;
-    font-family: Helvetica, sans-serif, Arial;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: azure;
     border-radius: 5px;
     display: inline-flex;
     margin-right: auto;
-    padding: 2px;
+    padding: 5px;
+    gap: 10px;
 }
 #button{
     color: white;
