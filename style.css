@@ -1,5 +1,5 @@
 h1, h2{
-    color: rgb(140, 76, 8);
+    color: gold;
 }
 body{
  line-height: 1.5;
@@ -12,11 +12,20 @@ body{
 }
 main{
     background-color: white;
-    border-radius: 15px;
+    border-radius: 10px;
     padding: 2%;
 }
 section{
     margin-top: 0px;
     padding-bottom: 5px;
     border-top: solid 1px gray
+}
+nav{
+    background-color: gold;
+    font-family: Helvetica, sans-serif, Arial;
+    color: azure;
+    border-radius: 5px;
+    display: inline-flex;
+    margin-right: auto;
+    padding: 2px;
 }
