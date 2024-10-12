@@ -39,3 +39,7 @@ text-align: center;
 display: block;
 margin: 0;
 }
+fieldset{
+    color: darkgoldenrod;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
