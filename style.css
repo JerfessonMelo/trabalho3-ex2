@@ -26,9 +26,8 @@ nav{
     color: azure;
     border-radius: 5px;
     display: inline-flex;
-    margin-right: auto;
     padding: 5px;
-    gap: 10px;
+    gap: 20px;
 }
 #button{
     color: white;
