@@ -1,0 +1,22 @@
+h1, h2{
+    color: rgb(140, 76, 8);
+}
+body{
+ line-height: 1.5;
+ font-family: Helvetica, sans-serif, Arial;
+ color: #444;
+ width: 60%;
+ margin: 0 auto;
+ padding: 2% 0;
+ background-color: grey;
+}
+main{
+    background-color: white;
+    border-radius: 15px;
+    padding: 2%;
+}
+section{
+    margin-top: 0px;
+    padding-bottom: 5px;
+    border-top: solid 1px gray
+}
