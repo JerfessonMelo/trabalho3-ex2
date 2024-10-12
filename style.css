@@ -1,4 +1,4 @@
-h1, h2{
+h1, h2, h4{
     color: gold;
 }
 body{
@@ -44,4 +44,8 @@ fieldset{
     color: darkgoldenrod;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     border-color: gold;
+}
+table{
+    border-color: blue;
+    border: solid;
 }
