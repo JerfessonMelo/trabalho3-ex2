@@ -37,3 +37,13 @@ nav{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     cursor: pointer;
 }
+input{
+border-radius: 5px;
+color: gold;
+content: "X";
+font-weight: bold;
+width: 50%;
+text-align: center;
+display: block;
+margin: 0;
+}
