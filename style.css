@@ -1,5 +1,8 @@
-h1, h2{
-    color: gold;
+header{
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin: 0;
 }
 body {
     line-height: 1.5;
@@ -13,7 +16,6 @@ main{
     background-color: white;
     padding: 5%;
     width: 60%;
-    margin-top: 8px;
     margin: 0 auto;
 }
 nav{
@@ -53,8 +55,44 @@ fieldset{
 }
 footer {
     color: white;
-    background-color: #333;
     text-align: center;
-    padding: 10px;
+    padding: 1%;
     font-style: italic;
+}
+input{
+    color: black;
+    display: block;
+    padding: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+}
+#sexo{
+    color: darkgoldenrod;
+    display: flex;
+    padding: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+}
+
+.ValidoInvalido:valid{
+    border: 2px solid seagreen;
+}
+.ValidoInvalido:invalid{
+    border: 2px solid red;
+}
+span{
+    position: relative;
+}
+.ValidoInvalido:valid+span::before{
+    content: '✓';
+    color: seagreen;
+}
+.ValidoInvalido:invalid+span::before{
+    content: '✖';
+    color: red;
+}
+.ValidoInvalido+span::before{
+    position: absolute;
+    top: -44px;
+    left: 155px;
 }
