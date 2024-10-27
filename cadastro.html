@@ -14,7 +14,7 @@
 
 <body>
     <header class="header">
-        <h1>Clínica ABC Health</h1>
+        <h1 id="tituloPage">Clínica ABC Health</h1>
     </header>
     <nav>
         <ul>
@@ -30,52 +30,51 @@
                 <legend>Dados Pessoais</legend>
 
                 <input type="hidden" name="original" value="web">
-                <form>
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" class="ValidoInvalido" minlength="2" maxlength="50"
-                        required autofocus>
-                    <span></span>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" class="ValidoInvalido" minlength="2" maxlength="50" required
+                    autofocus>
+                <span></span>
 
-                    <label for="e-mail">E-mail:</label>
-                    <input type="email" id="e-mail" name="e-mail" class="ValidoInvalido"
-                        placeholder="seuemail@gmail.com" required>
-                    <span></span>
+                <label for="e-mail">E-mail:</label>
+                <input type="email" id="e-mail" name="e-mail" class="ValidoInvalido" placeholder="seuemail@gmail.com"
+                    required>
+                <span></span>
 
-                    <label for="cpf">CPF:</label>
-                    <input type="text" id="cpf" name="cpf" class="ValidoInvalido" placeholder="000.000.000-00"
-                        pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required>
-                    <span></span>
+                <label for="cpf">CPF:</label>
+                <input type="text" id="cpf" name="cpf" class="ValidoInvalido" placeholder="000.000.000-00"
+                    pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required>
+                <span></span>
 
-                    <label for="idade">Idade:</label>
-                    <input type="number" id="idade" name="idade" required>
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" name="idade" required>
 
-                    <label for="telefone">Telefone:</label>
-                    <input type="tel" id="telefone" name="telefone" class="ValidoInvalido" placeholder="(00) 00000-0000"
-                        required>
-                    <span></span>
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" class="ValidoInvalido" placeholder="(00) 00000-0000"
+                    required>
+                <span></span>
 
-                    <label for="dataNascimento">Data Nascimento:</label>
-                    <input type="date" id="dataNascimento" name="dataNascimento">
+                <label for="dataNascimento">Data Nascimento:</label>
+                <input type="date" id="dataNascimento" name="dataNascimento">
 
-                    <label for="registro">Seu Número de Registro</label>
-                    <input type="number" id="registro" name="registro" value="965522" readonly>
-                    </from>
-                    <div id="sexo">
-                        <input type="radio" id="sexoM" name="sexo">
-                        <label for="sexoM">Masculino</label>
+                <label for="registro">Seu Número de Registro</label>
+                <input type="number" id="registro" name="registro" value="965522" readonly>
+                </from>
+                <div id="sexo">
+                    <input type="radio" id="sexoM" name="sexo">
+                    <label for="sexoM">Masculino</label>
 
-                        <input type="radio" id="sexoF" name="sexo">
-                        <label for="sexoF">Feminino</label>
-                    </div>
-                    <div>
-                        <label for="estadoCivil">Estado Civil</label>
-                        <select id="estadoCivil" name="estadoCivil">
-                            <option value="solteiro">Solteiro</option>
-                            <option value="casado">Casado</option>
-                            <option value="divorciado">Divorciado</option>
-                            <option value="viuvo">Viuvo</option>
-                        </select>
-                    </div>
+                    <input type="radio" id="sexoF" name="sexo">
+                    <label for="sexoF">Feminino</label>
+                </div>
+                <div id="estadoCivil">
+                    <label for="estadoCivil">Estado Civil</label>
+                    <select id="estadoCivil" name="estadoCivil">
+                        <option value="solteiro">Solteiro</option>
+                        <option value="casado">Casado</option>
+                        <option value="divorciado">Divorciado</option>
+                        <option value="viuvo">Viuvo</option>
+                    </select>
+                </div>
             </fieldset>
             <fieldset>
                 <legend>Endereço</legend>
@@ -142,11 +141,10 @@
                     <input type="file" multiple accept="image/*">
                 </div>
             </fieldset>
-            <button id="button">Finalizar Cadastro</button>
-        </form>
+            <button class="buttonFinalizar">Finalizar Cadastro</button>
     </main>
     <footer>
-        <i>Av. João Naves de Ásilas, Santa Mônica, Uberlândia<i>
+        <i>Av. João Naves de Ásilas, Santa Mônica, Uberlândia</i>
     </footer>
 </body>
 

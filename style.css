@@ -1,8 +1,11 @@
 .header{
-    color: white;
-    text-align: center;
     padding: 25px;
     margin: 0;
+}
+#tituloPage{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
 }
 body {
     line-height: 1.5;
@@ -17,6 +20,11 @@ main{
     padding: 5%;
     width: 60%;
     margin: 0 auto;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0;
 }
 nav{
     position: sticky;
@@ -43,10 +51,12 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #ccc;
 }
+
 fieldset{
-    color: darkgoldenrod;
+    color: gold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     border-color: gold;
+    border: 3px solid;
 }
 #img{
     box-shadow: 5px 5px 10px grey;
@@ -98,7 +108,41 @@ span{
     top: -44px;
     left: 155px;
 }
+input:first-child{
+    border: 3px solid yellow;
+}
 input:focus{
     box-shadow: 0 0 10px #6461ff;   
     outline: none;
+}
+#estadoCivil:first-of-type{
+    border: 3px solid blue;
+    border-radius: 5px;
+}
+.buttonFinalizar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 0;
+    font-weight: bold;
+    color: white;
+    background-color: #6461ff;
+}
+h2, p{
+    font-weight: bold;
+    font-style: italic;
+    color: #333;
+}
+form:has(input:invalid){
+    background-color: darkred;
+    border-radius: 10px;
+}
+:is(textarea):focus{
+    outline: none;
+    border:3px solid blue;
+    border-radius: 5px;
 }
